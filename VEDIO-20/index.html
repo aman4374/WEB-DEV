@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p:nth-child(1) {
+            background-color: yellow;
+            color: red;
+        }
+
+        div p:not(:nth-child(1)) {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+        <p>I am yet another para</p>
+        <p>I am the last para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+        <p>I am yet another para</p>
+        <p>I am the last para</p>
+    </div>
+</body>
+</html>

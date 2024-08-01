@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AADHAR Card Application Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>AADHAR Card Application Form</h2>
+        <form name="aadharForm" onsubmit="return validateForm()">
+            <label for="resident">Resident or Non Resident Indian:</label>
+            <select id="resident" name="resident">
+                <option value="">--Select--</option>
+                <option value="Resident">Resident</option>
+                <option value="Non Resident Indian">Non Resident Indian</option>
+            </select><br><br>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName"><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob"><br><br>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="3"></textarea><br><br>
+            <label for="fathersName">Father's Name:</label>
+            <input type="text" id="fathersName" name="fathersName"><br><br>
+            <label for="mothersName">Mother's Name:</label>
+            <input type="text" id="mothersName" name="mothersName"><br><br>
+            <label for="proofType">Type of Proof Submitted:</label>
+            <select id="proofType" name="proofType">
+                <option value="">--Select--</option>
+                <option value="Driving license">Driving license</option>
+                <option value="Election ID">Election ID</option>
+                <option value="Ration Card">Ration Card</option>
+            </select><br><br>
+            <label for="documentId">Document ID:</label>
+            <input type="text" id="documentId" name="documentId"><br><br>
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="text" id="mobileNumber" name="mobileNumber"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.card{
+  border: 2px solid rgb(224, 19, 19);
+  max-width: 23vw;
+}
+.container{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
