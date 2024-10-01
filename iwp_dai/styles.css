@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e2e2;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar content last-posts";
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.header {
+    grid-area: header;
+    background-color: #ffff00;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.content {
+    grid-area: content;
+    padding: 20px;
+}
+
+.content article {
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.last-posts {
+    grid-area: last-posts;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.last-posts h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.last-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.last-posts ul li {
+    margin-bottom: 5px;
+}
+
+.last-posts ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+.title{
+    align-items: center;
+}

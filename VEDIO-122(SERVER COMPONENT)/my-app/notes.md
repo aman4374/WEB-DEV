@@ -1,0 +1,1 @@
+in next everything is bydefault SERVER Component.
