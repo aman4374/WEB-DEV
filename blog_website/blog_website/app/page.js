@@ -176,25 +176,36 @@ export default function Home() {
   </div>
 </section>
 
-<footer className="bg-gray-800 text-gray-300 py-6">
+<footer className="bg-gray-800 text-gray-300 py-8">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap justify-between">
       {/* Logo & Description */}
       <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
         <h3 className="text-xl font-semibold text-white">Aman’s DevLog</h3>
         <p className="mt-2 text-gray-400">
-          Your go-to resource for learning about coding, development, and software engineering.
+          Your go-to resource for learning about coding, development, and software engineering. Explore tutorials, best practices, and insights from the world of software development to help you on your journey to becoming a better developer.
         </p>
       </div>
 
       {/* Quick Links */}
-      <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
+      <div className=" px-10 w-full sm:w-1/2 lg:w-1/3 mb-6">
         <h4 className="text-lg font-semibold text-white">Quick Links</h4>
         <ul className="mt-4 space-y-2">
           <li><a href="/about" className="hover:underline">About Us</a></li>
-          <li><a href="/blogs" className="hover:underline">Blogs</a></li>
+          <li><a href="/blog" className="hover:underline">Blogs</a></li>
+          {/* <li><a href="/resources" className="hover:underline">Resources</a></li>
+          <li><a href="/projects" className="hover:underline">Projects</a></li> */}
           <li><a href="/contact" className="hover:underline">Contact</a></li>
-          {/* <li><a href="/faq" className="hover:underline">FAQ</a></li> */}
+        </ul>
+      </div>
+
+      {/* Latest Blogs */}
+      <div className="w-full sm:w-1/2 lg:w-1/3 mb-6">
+        <h4 className="text-lg font-semibold text-white">Latest Blogs</h4>
+        <ul className="mt-4 space-y-2">
+          <li><a href="/blogs/c-tutorial" className="hover:underline">Mastering C Programming: A Beginner's Guide</a></li>
+          <li><a href="/blogs/javascript" className="hover:underline">Understanding JavaScript Closures</a></li>
+          <li><a href="/blogs/frontend-vs-backend" className="hover:underline">Frontend vs Backend Development: Key Differences</a></li>
         </ul>
       </div>
 
@@ -221,12 +232,15 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Copyright */}
+    {/* Contact Info */}
     <div className="mt-8 text-center text-gray-400">
       <p>&copy; {new Date().getFullYear()} Aman’s DevLog. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:info@amansdevlog.com" className="hover:underline text-white">info@amansdevlog.com</a></p>
+      <p>Phone: +91 9151726004</p>
     </div>
   </div>
 </footer>
+
 
     </main>
   );
